@@ -3,17 +3,21 @@ name: Default Module
 commands:
 - name: modules
   callback: commands/modules.lua
+  help: Give you all the current modules installed on your server
 
 - name: add_module
   alias: add_modules
   callback: commands/add_module.lua
   args: "<name:string+>"
+  help: Add a module to your server
 
 - name: remove_module
   alias: remove_modules
   callback: commands/remove_module.lua
   args: "<name:string+>"
+  help: Remove a module to your server
 
 - name: help
   callback: commands/help.lua
   args: "[module:string]"
+  help: Print the help for any module
