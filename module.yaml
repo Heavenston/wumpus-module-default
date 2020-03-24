@@ -1,0 +1,19 @@
+name: Default Module
+
+commands:
+- name: modules
+  callback: commands/modules.lua
+
+- name: add_module
+  alias: add_modules
+  callback: commands/add_module.lua
+  args: "<name:string+>"
+
+- name: remove_module
+  alias: remove_modules
+  callback: commands/remove_module.lua
+  args: "<name:string+>"
+
+- name: help
+  callback: commands/help.lua
+  args: "[module:string]"
